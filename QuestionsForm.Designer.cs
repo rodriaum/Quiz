@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionsForm));
             titleLabel = new Label();
             pictureBox1 = new PictureBox();
             statusTitleLabel = new Label();
@@ -223,6 +224,7 @@
             Controls.Add(statusTitleLabel);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "QuestionsForm";
             StartPosition = FormStartPosition.CenterScreen;
