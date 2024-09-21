@@ -77,11 +77,15 @@ namespace Quiz
         {
             this.Started = !this.Started;
 
-            bool active = this.Started && !PermanentError;
+            if (PermanentError)
+            {
+                HandleDebug("Devido a um erro não é possível iniciar o jogo! Tente reiniciar a aplicação.", true);
+                return;
+            }
 
-            RefreshQuiz(active);
+            RefreshQuiz(this.Started);
 
-            if (active)
+            if (this.Started)
             {
                 timeTimer.Start();
 
@@ -115,7 +119,11 @@ namespace Quiz
 
             await Task.Delay(3000);
 
-            debugLabel.Text = "";
+            // Código improvisado para não limpar outras mensagens geradas durante a contagem do delay.
+            if (debugLabel.Text == s)
+            {
+                debugLabel.Text = "";
+            }
         }
 
         public void HandleResponse()

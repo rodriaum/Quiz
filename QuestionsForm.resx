@@ -117,10 +117,474 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="titleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="titleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt, style=Bold</value>
+  </data>
+  <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 45</value>
+  </data>
+  <data name="titleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>QUIZ</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Name" xml:space="preserve">
+    <value>titleLabel</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="blackgroundPictureBox.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="blackgroundPictureBox.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="blackgroundPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 57</value>
+  </data>
+  <data name="blackgroundPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>660, 110</value>
+  </data>
+  <data name="blackgroundPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;blackgroundPictureBox.Name" xml:space="preserve">
+    <value>blackgroundPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blackgroundPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blackgroundPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;blackgroundPictureBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="statusTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="statusTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 132</value>
+  </data>
+  <data name="statusTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 15</value>
+  </data>
+  <data name="statusTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="statusTitleLabel.Text" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="statusTitleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;statusTitleLabel.Name" xml:space="preserve">
+    <value>statusTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;statusTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusTitleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusTitleLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="answersTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="answersTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 131</value>
+  </data>
+  <data name="answersTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 15</value>
+  </data>
+  <data name="answersTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="answersTitleLabel.Text" xml:space="preserve">
+    <value>Respostas</value>
+  </data>
+  <data name="&gt;&gt;answersTitleLabel.Name" xml:space="preserve">
+    <value>answersTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;answersTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;answersTitleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;answersTitleLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="scoreTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scoreTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 131</value>
+  </data>
+  <data name="scoreTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="scoreTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="scoreTitleLabel.Text" xml:space="preserve">
+    <value>Pontuação</value>
+  </data>
+  <data name="&gt;&gt;scoreTitleLabel.Name" xml:space="preserve">
+    <value>scoreTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;scoreTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scoreTitleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;scoreTitleLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="statusLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="statusLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="statusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 112</value>
+  </data>
+  <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="statusLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="statusLabel.Text" xml:space="preserve">
+    <value>Desativado</value>
+  </data>
+  <data name="statusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
+    <value>statusLabel</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="answersLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="answersLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="answersLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 112</value>
+  </data>
+  <data name="answersLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="answersLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="answersLabel.Text" xml:space="preserve">
+    <value>0/0</value>
+  </data>
+  <data name="&gt;&gt;answersLabel.Name" xml:space="preserve">
+    <value>answersLabel</value>
+  </data>
+  <data name="&gt;&gt;answersLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;answersLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;answersLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="scoreLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scoreLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="scoreLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 112</value>
+  </data>
+  <data name="scoreLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 20</value>
+  </data>
+  <data name="scoreLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="scoreLabel.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;scoreLabel.Name" xml:space="preserve">
+    <value>scoreLabel</value>
+  </data>
+  <data name="&gt;&gt;scoreLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scoreLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;scoreLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="toggleButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="toggleButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 173</value>
+  </data>
+  <data name="toggleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 40</value>
+  </data>
+  <data name="toggleButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="toggleButton.Text" xml:space="preserve">
+    <value>Iniciar</value>
+  </data>
+  <data name="&gt;&gt;toggleButton.Name" xml:space="preserve">
+    <value>toggleButton</value>
+  </data>
+  <data name="&gt;&gt;toggleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toggleButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toggleButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="responseButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="responseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 173</value>
+  </data>
+  <data name="responseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 40</value>
+  </data>
+  <data name="responseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="responseButton.Text" xml:space="preserve">
+    <value>Responder</value>
+  </data>
+  <data name="responseButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;responseButton.Name" xml:space="preserve">
+    <value>responseButton</value>
+  </data>
+  <data name="&gt;&gt;responseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;responseButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;responseButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="questionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="questionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 250</value>
+  </data>
+  <data name="questionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="questionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;questionLabel.Name" xml:space="preserve">
+    <value>questionLabel</value>
+  </data>
+  <data name="&gt;&gt;questionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;questionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;questionLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="responseTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 302</value>
+  </data>
+  <data name="responseTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 23</value>
+  </data>
+  <data name="responseTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="responseTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;responseTextBox.Name" xml:space="preserve">
+    <value>responseTextBox</value>
+  </data>
+  <data name="&gt;&gt;responseTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;responseTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;responseTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="responseTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="responseTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 284</value>
+  </data>
+  <data name="responseTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="responseTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="responseTitleLabel.Text" xml:space="preserve">
+    <value>Resposta</value>
+  </data>
+  <data name="&gt;&gt;responseTitleLabel.Name" xml:space="preserve">
+    <value>responseTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;responseTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;responseTitleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;responseTitleLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="debugLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="debugLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="debugLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 57</value>
+  </data>
+  <data name="debugLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 12</value>
+  </data>
+  <data name="debugLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;debugLabel.Name" xml:space="preserve">
+    <value>debugLabel</value>
+  </data>
+  <data name="&gt;&gt;debugLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;debugLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;debugLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <metadata name="timeTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="timeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="timeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 112</value>
+  </data>
+  <data name="timeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 20</value>
+  </data>
+  <data name="timeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="timeLabel.Text" xml:space="preserve">
+    <value>0s</value>
+  </data>
+  <data name="&gt;&gt;timeLabel.Name" xml:space="preserve">
+    <value>timeLabel</value>
+  </data>
+  <data name="&gt;&gt;timeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="timeTitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timeTitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 131</value>
+  </data>
+  <data name="timeTitleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 15</value>
+  </data>
+  <data name="timeTitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="timeTitleLabel.Text" xml:space="preserve">
+    <value>Tempo</value>
+  </data>
+  <data name="&gt;&gt;timeTitleLabel.Name" xml:space="preserve">
+    <value>timeTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;timeTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeTitleLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timeTitleLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>pt</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>684, 423</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAgBAAAAAAAAAAAAAAAAAAAA
@@ -1252,5 +1716,23 @@
         ////////////////+AAAH///////////////////////////////////////////////////////////
         //////////////////////////////////8=
 </value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Quiz</value>
+  </data>
+  <data name="&gt;&gt;timeTimer.Name" xml:space="preserve">
+    <value>timeTimer</value>
+  </data>
+  <data name="&gt;&gt;timeTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>QuestionsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -31,7 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionsForm));
             titleLabel = new Label();
-            pictureBox1 = new PictureBox();
+            blackgroundPictureBox = new PictureBox();
             statusTitleLabel = new Label();
             answersTitleLabel = new Label();
             scoreTitleLabel = new Label();
@@ -47,167 +47,108 @@
             timeTimer = new System.Windows.Forms.Timer(components);
             timeLabel = new Label();
             timeTitleLabel = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)blackgroundPictureBox).BeginInit();
             SuspendLayout();
             // 
             // titleLabel
             // 
-            titleLabel.AutoSize = true;
-            titleLabel.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            resources.ApplyResources(titleLabel, "titleLabel");
             titleLabel.ForeColor = Color.FromArgb(0, 64, 0);
-            titleLabel.Location = new Point(12, 9);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(96, 45);
-            titleLabel.TabIndex = 0;
-            titleLabel.Text = "QUIZ";
             // 
-            // pictureBox1
+            // blackgroundPictureBox
             // 
-            pictureBox1.BackColor = SystemColors.Control;
-            pictureBox1.Location = new Point(12, 57);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(660, 110);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            blackgroundPictureBox.BackColor = SystemColors.Control;
+            resources.ApplyResources(blackgroundPictureBox, "blackgroundPictureBox");
+            blackgroundPictureBox.Name = "blackgroundPictureBox";
+            blackgroundPictureBox.TabStop = false;
             // 
             // statusTitleLabel
             // 
-            statusTitleLabel.AutoSize = true;
+            resources.ApplyResources(statusTitleLabel, "statusTitleLabel");
             statusTitleLabel.BackColor = SystemColors.Control;
             statusTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            statusTitleLabel.Location = new Point(538, 132);
             statusTitleLabel.Name = "statusTitleLabel";
-            statusTitleLabel.Size = new Size(42, 15);
-            statusTitleLabel.TabIndex = 2;
-            statusTitleLabel.Text = "Estado";
-            statusTitleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // answersTitleLabel
             // 
-            answersTitleLabel.AutoSize = true;
+            resources.ApplyResources(answersTitleLabel, "answersTitleLabel");
             answersTitleLabel.BackColor = SystemColors.Control;
             answersTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            answersTitleLabel.Location = new Point(237, 131);
             answersTitleLabel.Name = "answersTitleLabel";
-            answersTitleLabel.Size = new Size(59, 15);
-            answersTitleLabel.TabIndex = 3;
-            answersTitleLabel.Text = "Respostas";
             // 
             // scoreTitleLabel
             // 
-            scoreTitleLabel.AutoSize = true;
+            resources.ApplyResources(scoreTitleLabel, "scoreTitleLabel");
             scoreTitleLabel.BackColor = SystemColors.Control;
             scoreTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            scoreTitleLabel.Location = new Point(377, 131);
             scoreTitleLabel.Name = "scoreTitleLabel";
-            scoreTitleLabel.Size = new Size(64, 15);
-            scoreTitleLabel.TabIndex = 4;
-            scoreTitleLabel.Text = "Pontuação";
             // 
             // statusLabel
             // 
-            statusLabel.AutoSize = true;
+            resources.ApplyResources(statusLabel, "statusLabel");
             statusLabel.BackColor = SystemColors.Control;
-            statusLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             statusLabel.ForeColor = Color.Red;
-            statusLabel.Location = new Point(538, 112);
             statusLabel.Name = "statusLabel";
-            statusLabel.Size = new Size(84, 20);
-            statusLabel.TabIndex = 5;
-            statusLabel.Text = "Desativado";
-            statusLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // answersLabel
             // 
-            answersLabel.AutoSize = true;
+            resources.ApplyResources(answersLabel, "answersLabel");
             answersLabel.BackColor = SystemColors.Control;
-            answersLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             answersLabel.ForeColor = Color.Green;
-            answersLabel.Location = new Point(237, 112);
             answersLabel.Name = "answersLabel";
-            answersLabel.Size = new Size(31, 20);
-            answersLabel.TabIndex = 6;
-            answersLabel.Text = "0/0";
             // 
             // scoreLabel
             // 
-            scoreLabel.AutoSize = true;
+            resources.ApplyResources(scoreLabel, "scoreLabel");
             scoreLabel.BackColor = SystemColors.Control;
-            scoreLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             scoreLabel.ForeColor = Color.Green;
-            scoreLabel.Location = new Point(377, 112);
             scoreLabel.Name = "scoreLabel";
-            scoreLabel.Size = new Size(17, 20);
-            scoreLabel.TabIndex = 7;
-            scoreLabel.Text = "0";
             // 
             // toggleButton
             // 
             toggleButton.BackColor = Color.SeaGreen;
-            toggleButton.FlatStyle = FlatStyle.Flat;
+            resources.ApplyResources(toggleButton, "toggleButton");
             toggleButton.ForeColor = SystemColors.ControlLightLight;
-            toggleButton.Location = new Point(12, 173);
             toggleButton.Name = "toggleButton";
-            toggleButton.Size = new Size(120, 40);
-            toggleButton.TabIndex = 8;
-            toggleButton.Text = "Iniciar";
             toggleButton.UseVisualStyleBackColor = false;
             toggleButton.Click += ToggleButton_Click;
             // 
             // responseButton
             // 
             responseButton.BackColor = Color.SeaGreen;
-            responseButton.FlatStyle = FlatStyle.Flat;
+            resources.ApplyResources(responseButton, "responseButton");
             responseButton.ForeColor = SystemColors.ControlLightLight;
-            responseButton.Location = new Point(138, 173);
             responseButton.Name = "responseButton";
-            responseButton.Size = new Size(120, 40);
-            responseButton.TabIndex = 9;
-            responseButton.Text = "Responder";
             responseButton.UseVisualStyleBackColor = false;
-            responseButton.Visible = false;
             responseButton.Click += ResponseButton_Click;
             // 
             // questionLabel
             // 
-            questionLabel.AutoSize = true;
+            resources.ApplyResources(questionLabel, "questionLabel");
             questionLabel.ForeColor = Color.FromArgb(64, 64, 64);
-            questionLabel.Location = new Point(21, 250);
             questionLabel.Name = "questionLabel";
-            questionLabel.Size = new Size(0, 15);
-            questionLabel.TabIndex = 11;
             // 
             // responseTextBox
             // 
             responseTextBox.BorderStyle = BorderStyle.FixedSingle;
-            responseTextBox.Location = new Point(12, 302);
+            resources.ApplyResources(responseTextBox, "responseTextBox");
             responseTextBox.Name = "responseTextBox";
             responseTextBox.ReadOnly = true;
-            responseTextBox.Size = new Size(345, 23);
-            responseTextBox.TabIndex = 12;
-            responseTextBox.TextAlign = HorizontalAlignment.Center;
             responseTextBox.KeyDown += responseTextBox_KeyDown;
             // 
             // responseTitleLabel
             // 
-            responseTitleLabel.AutoSize = true;
+            resources.ApplyResources(responseTitleLabel, "responseTitleLabel");
             responseTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            responseTitleLabel.Location = new Point(12, 284);
             responseTitleLabel.Name = "responseTitleLabel";
-            responseTitleLabel.Size = new Size(54, 15);
-            responseTitleLabel.TabIndex = 13;
-            responseTitleLabel.Text = "Resposta";
             // 
             // debugLabel
             // 
-            debugLabel.AutoSize = true;
+            resources.ApplyResources(debugLabel, "debugLabel");
             debugLabel.BackColor = SystemColors.Control;
-            debugLabel.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             debugLabel.ForeColor = Color.Red;
-            debugLabel.Location = new Point(12, 57);
             debugLabel.Name = "debugLabel";
-            debugLabel.Size = new Size(0, 12);
-            debugLabel.TabIndex = 14;
             // 
             // timeTimer
             // 
@@ -217,33 +158,23 @@
             // 
             // timeLabel
             // 
-            timeLabel.AutoSize = true;
+            resources.ApplyResources(timeLabel, "timeLabel");
             timeLabel.BackColor = SystemColors.Control;
-            timeLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             timeLabel.ForeColor = Color.Green;
-            timeLabel.Location = new Point(73, 112);
             timeLabel.Name = "timeLabel";
-            timeLabel.Size = new Size(23, 20);
-            timeLabel.TabIndex = 16;
-            timeLabel.Text = "0s";
             // 
             // timeTitleLabel
             // 
-            timeTitleLabel.AutoSize = true;
+            resources.ApplyResources(timeTitleLabel, "timeTitleLabel");
             timeTitleLabel.BackColor = SystemColors.Control;
             timeTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            timeTitleLabel.Location = new Point(73, 131);
             timeTitleLabel.Name = "timeTitleLabel";
-            timeTitleLabel.Size = new Size(43, 15);
-            timeTitleLabel.TabIndex = 15;
-            timeTitleLabel.Text = "Tempo";
             // 
             // QuestionsForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(684, 423);
             Controls.Add(timeLabel);
             Controls.Add(timeTitleLabel);
             Controls.Add(titleLabel);
@@ -259,15 +190,12 @@
             Controls.Add(scoreTitleLabel);
             Controls.Add(answersTitleLabel);
             Controls.Add(statusTitleLabel);
-            Controls.Add(pictureBox1);
+            Controls.Add(blackgroundPictureBox);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "QuestionsForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Quiz";
             Load += QuestionsForm_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)blackgroundPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -275,7 +203,7 @@
         #endregion
 
         private Label titleLabel;
-        private PictureBox pictureBox1;
+        private PictureBox blackgroundPictureBox;
         private Label statusTitleLabel;
         private Label answersTitleLabel;
         private Label scoreTitleLabel;
