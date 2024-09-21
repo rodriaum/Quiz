@@ -28,7 +28,7 @@ Este é uma aplicação de quiz com perguntas e respostas, sistema de pontuação e f
 1. Compile e execute o aplicativo no Visual Studio.
 
 ## Licença
-Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](https://github.com/rodriaum/LoginAppServer?tab=MIT-1-ov-file#MIT-1-ov-file) para mais detalhes.
+Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](https://github.com/rodriaum/Quiz?tab=MIT-1-ov-file#MIT-1-ov-file) para mais detalhes.
 
 ## Contribuição
 1. Faça um fork do projeto
