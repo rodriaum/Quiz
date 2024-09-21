@@ -41,6 +41,7 @@
             questionLabel = new Label();
             responseTextBox = new TextBox();
             responseTitleLabel = new Label();
+            debugLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -159,11 +160,13 @@
             responseButton.Text = "Responder";
             responseButton.UseVisualStyleBackColor = false;
             responseButton.Visible = false;
+            responseButton.Click += ResponseButton_Click;
             // 
             // questionLabel
             // 
             questionLabel.AutoSize = true;
-            questionLabel.Location = new Point(25, 249);
+            questionLabel.ForeColor = Color.FromArgb(64, 64, 64);
+            questionLabel.Location = new Point(21, 250);
             questionLabel.Name = "questionLabel";
             questionLabel.Size = new Size(0, 15);
             questionLabel.TabIndex = 11;
@@ -188,12 +191,25 @@
             responseTitleLabel.TabIndex = 13;
             responseTitleLabel.Text = "Resposta";
             // 
+            // debugLabel
+            // 
+            debugLabel.AutoSize = true;
+            debugLabel.BackColor = SystemColors.Control;
+            debugLabel.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            debugLabel.ForeColor = Color.Red;
+            debugLabel.Location = new Point(12, 57);
+            debugLabel.Name = "debugLabel";
+            debugLabel.Size = new Size(0, 12);
+            debugLabel.TabIndex = 14;
+            // 
             // QuestionsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(684, 423);
+            Controls.Add(titleLabel);
+            Controls.Add(debugLabel);
             Controls.Add(responseTitleLabel);
             Controls.Add(responseTextBox);
             Controls.Add(questionLabel);
@@ -206,8 +222,10 @@
             Controls.Add(answersTitleLabel);
             Controls.Add(statusTitleLabel);
             Controls.Add(pictureBox1);
-            Controls.Add(titleLabel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "QuestionsForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Quiz";
             Load += QuestionsForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -230,5 +248,6 @@
         private Label questionLabel;
         private TextBox responseTextBox;
         private Label responseTitleLabel;
+        private Label debugLabel;
     }
 }
