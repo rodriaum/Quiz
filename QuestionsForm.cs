@@ -13,6 +13,7 @@ namespace Quiz
         private bool PermanentError { get; set; }
 
         private int Points { get; set; }
+        private int Time { get; set; }
 
         private List<Question>? Questions { get; set; }
         private List<int> IndexAnswerQuestions { get; set; }
@@ -39,7 +40,7 @@ namespace Quiz
             {
                 PermanentError = true;
 
-                debugLabel.Text = "Devido a um erro não é possível iniciar o jogo! Tente reiniciar a aplicação.";
+                HandleDebug("Devido a um erro não é possível iniciar o jogo! Tente reiniciar a aplicação.", true);
             }
             else
             {
@@ -47,6 +48,15 @@ namespace Quiz
             }
 
             RefreshQuiz(this.Started && !PermanentError);
+        }
+
+        private void timeTimer_Tick(object sender, EventArgs e)
+        {
+            if (this.Started && !PermanentError)
+            {
+                Time++;
+                timeLabel.Text = TimeUtil.FormatTime(Time, true);
+            }
         }
 
         private void responseTextBox_KeyDown(object sender, KeyEventArgs e)
@@ -73,11 +83,15 @@ namespace Quiz
 
             if (active)
             {
+                timeTimer.Start();
+
                 RefreshQuestion();
-                debugLabel.Text = "Você iniciou o jogo.";
+                HandleDebug("Você iniciou o jogo.");
             }
             else
             {
+                timeTimer.Stop();
+
                 questionLabel.Text = "";
 
                 // Limpa as variáveis.
@@ -85,7 +99,7 @@ namespace Quiz
                 IndexAnswerQuestions.Clear();
 
                 // Mensagem de Aviso
-                debugLabel.Text = "Você finalizou o jogo.";
+                HandleDebug("Você finalizou o jogo.");
 
                 // Atualiza a pontuação após as variáveis serem limpas.
                 RefreshScore();
@@ -93,6 +107,16 @@ namespace Quiz
         }
 
         /* Helpers */
+
+        public async void HandleDebug(string s, bool isError = false)
+        {
+            debugLabel.ForeColor = (isError ? Color.Red : Color.Green);
+            debugLabel.Text = s;
+
+            await Task.Delay(3000);
+
+            debugLabel.Text = "";
+        }
 
         public void HandleResponse()
         {
@@ -105,7 +129,7 @@ namespace Quiz
 
             if (question == null)
             {
-                debugLabel.Text = "Não foi possível encontrar a questão atual! A mesma será trocada automáticamente.";
+                HandleDebug("Não foi possível encontrar a questão atual! A mesma será trocada automáticamente.", true);
                 responseTextBox.Clear();
 
                 RefreshQuestion();
@@ -114,7 +138,7 @@ namespace Quiz
 
             if (string.IsNullOrEmpty(answer.Replace(" ", "")))
             {
-                debugLabel.Text = "A resposta não pode estar vazia.";
+                HandleDebug("A resposta não pode estar vazia.");
                 return;
             }
 
@@ -128,6 +152,8 @@ namespace Quiz
             {
                 if (Points > 0)
                     Points -= 50;
+
+                HandleDebug($"Ops! A resposta correta era \"{question.Answer}\"");
             }
 
             responseTextBox.Clear();
@@ -145,7 +171,7 @@ namespace Quiz
             this.toggleButton.Text = (active ? "Terminar" : "Iniciar");
 
             statusLabel.Text = (active ? "Iniciado" : "Desativado");
-            statusLabel.ForeColor = (active ? Color.SeaGreen : Color.Red);
+            statusLabel.ForeColor = (active ? Color.Green : Color.Red);
 
             RefreshScore();
         }
@@ -159,6 +185,7 @@ namespace Quiz
             if (IndexAnswerQuestions.Count == count)
             {
                 IndexAnswerQuestions.Clear();
+                HandleDebug("Quiz terminado em " + TimeUtil.FormatTime(Time));
             }
 
             int index = Random.Next(count);

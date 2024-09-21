@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionsForm));
             titleLabel = new Label();
             pictureBox1 = new PictureBox();
@@ -43,6 +44,9 @@
             responseTextBox = new TextBox();
             responseTitleLabel = new Label();
             debugLabel = new Label();
+            timeTimer = new System.Windows.Forms.Timer(components);
+            timeLabel = new Label();
+            timeTitleLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -50,6 +54,7 @@
             // 
             titleLabel.AutoSize = true;
             titleLabel.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleLabel.ForeColor = Color.FromArgb(0, 64, 0);
             titleLabel.Location = new Point(12, 9);
             titleLabel.Name = "titleLabel";
             titleLabel.Size = new Size(96, 45);
@@ -82,7 +87,7 @@
             answersTitleLabel.AutoSize = true;
             answersTitleLabel.BackColor = SystemColors.Control;
             answersTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            answersTitleLabel.Location = new Point(76, 131);
+            answersTitleLabel.Location = new Point(237, 131);
             answersTitleLabel.Name = "answersTitleLabel";
             answersTitleLabel.Size = new Size(59, 15);
             answersTitleLabel.TabIndex = 3;
@@ -93,7 +98,7 @@
             scoreTitleLabel.AutoSize = true;
             scoreTitleLabel.BackColor = SystemColors.Control;
             scoreTitleLabel.ForeColor = SystemColors.ControlDarkDark;
-            scoreTitleLabel.Location = new Point(303, 131);
+            scoreTitleLabel.Location = new Point(377, 131);
             scoreTitleLabel.Name = "scoreTitleLabel";
             scoreTitleLabel.Size = new Size(64, 15);
             scoreTitleLabel.TabIndex = 4;
@@ -105,7 +110,7 @@
             statusLabel.BackColor = SystemColors.Control;
             statusLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             statusLabel.ForeColor = Color.Red;
-            statusLabel.Location = new Point(525, 112);
+            statusLabel.Location = new Point(538, 112);
             statusLabel.Name = "statusLabel";
             statusLabel.Size = new Size(84, 20);
             statusLabel.TabIndex = 5;
@@ -118,7 +123,7 @@
             answersLabel.BackColor = SystemColors.Control;
             answersLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             answersLabel.ForeColor = Color.Green;
-            answersLabel.Location = new Point(88, 112);
+            answersLabel.Location = new Point(237, 112);
             answersLabel.Name = "answersLabel";
             answersLabel.Size = new Size(31, 20);
             answersLabel.TabIndex = 6;
@@ -130,7 +135,7 @@
             scoreLabel.BackColor = SystemColors.Control;
             scoreLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             scoreLabel.ForeColor = Color.Green;
-            scoreLabel.Location = new Point(328, 112);
+            scoreLabel.Location = new Point(377, 112);
             scoreLabel.Name = "scoreLabel";
             scoreLabel.Size = new Size(17, 20);
             scoreLabel.TabIndex = 7;
@@ -204,12 +209,43 @@
             debugLabel.Size = new Size(0, 12);
             debugLabel.TabIndex = 14;
             // 
+            // timeTimer
+            // 
+            timeTimer.Enabled = true;
+            timeTimer.Interval = 1000;
+            timeTimer.Tick += timeTimer_Tick;
+            // 
+            // timeLabel
+            // 
+            timeLabel.AutoSize = true;
+            timeLabel.BackColor = SystemColors.Control;
+            timeLabel.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            timeLabel.ForeColor = Color.Green;
+            timeLabel.Location = new Point(73, 112);
+            timeLabel.Name = "timeLabel";
+            timeLabel.Size = new Size(23, 20);
+            timeLabel.TabIndex = 16;
+            timeLabel.Text = "0s";
+            // 
+            // timeTitleLabel
+            // 
+            timeTitleLabel.AutoSize = true;
+            timeTitleLabel.BackColor = SystemColors.Control;
+            timeTitleLabel.ForeColor = SystemColors.ControlDarkDark;
+            timeTitleLabel.Location = new Point(73, 131);
+            timeTitleLabel.Name = "timeTitleLabel";
+            timeTitleLabel.Size = new Size(43, 15);
+            timeTitleLabel.TabIndex = 15;
+            timeTitleLabel.Text = "Tempo";
+            // 
             // QuestionsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(684, 423);
+            Controls.Add(timeLabel);
+            Controls.Add(timeTitleLabel);
             Controls.Add(titleLabel);
             Controls.Add(debugLabel);
             Controls.Add(responseTitleLabel);
@@ -252,5 +288,8 @@
         private TextBox responseTextBox;
         private Label responseTitleLabel;
         private Label debugLabel;
+        private System.Windows.Forms.Timer timeTimer;
+        private Label timeLabel;
+        private Label timeTitleLabel;
     }
 }
