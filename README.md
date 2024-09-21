@@ -3,6 +3,11 @@
 ## Descrição
 Este é uma aplicação de quiz com perguntas e respostas, sistema de pontuação e funcionalidade para habilitar e desativar o quiz.
 
+## Imagens
+| Habilitado | Desabilitado |
+|:-----------------------------------:|:--------------------------------------:|
+| ![Active](https://imgur.com/uDrWVMj.png) | ![Desactive](https://imgur.com/JmSdHXB.png) |
+
 ## Funcionalidades
 - Perguntas e respostas dinâmicas
 - Sistema de pontuação
@@ -31,8 +36,3 @@ Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](https:/
 3. Faça commit das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
 4. Faça push para a branch (`git push origin feature/nova-funcionalidade`)
 5. Abra um Pull Request
-
-## Imagens
-| Habilitado | Desabilitado |
-|:-----------------------------------:|:--------------------------------------:|
-| ![Active](https://imgur.com/uDrWVMj.png) | ![Desactive](https://imgur.com/JmSdHXB.png) |
