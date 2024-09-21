@@ -181,6 +181,7 @@
             responseTextBox.Size = new Size(345, 23);
             responseTextBox.TabIndex = 12;
             responseTextBox.TextAlign = HorizontalAlignment.Center;
+            responseTextBox.KeyDown += responseTextBox_KeyDown;
             // 
             // responseTitleLabel
             // 

@@ -17,7 +17,7 @@ namespace Quiz
         private List<Question>? Questions { get; set; }
         private List<int> IndexAnswerQuestions { get; set; }
 
-        private Random Random {  get; set; }
+        private Random Random { get; set; }
 
         /* Procedures */
 
@@ -31,7 +31,7 @@ namespace Quiz
             this.Started = false;
 
             IndexAnswerQuestions = new List<int>();
-            Random = new Random(); 
+            Random = new Random();
 
             Questions = await JsonHelper.GetJsonQuestions("questions.json");
 
@@ -47,6 +47,20 @@ namespace Quiz
             }
 
             RefreshQuiz(this.Started && !PermanentError);
+        }
+
+        private void responseTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                HandleResponse();
+            }
+        }
+
+        private void ResponseButton_Click(object sender, EventArgs e)
+        {
+            HandleResponse();
         }
 
         private void ToggleButton_Click(object sender, EventArgs e)
@@ -78,7 +92,9 @@ namespace Quiz
             }
         }
 
-        private void ResponseButton_Click(object sender, EventArgs e)
+        /* Helpers */
+
+        public void HandleResponse()
         {
             if (Questions == null) return;
 
@@ -119,8 +135,6 @@ namespace Quiz
             RefreshScore();
             RefreshQuestion();
         }
-
-        /* Helpers */
 
         private void RefreshQuiz(bool active)
         {
