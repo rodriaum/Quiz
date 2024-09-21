@@ -1,10 +1,7 @@
 # Quiz App
 
-![Quiz Habilitado](https://imgur.com/uDrWVMj)
-![Quiz Desabilitado](https://imgur.com/JmSdHXB)
-
 ## Descrição
-Este é um aplicativo de quiz com perguntas e respostas, sistema de pontuação e funcionalidade para habilitar e desativar o quiz.
+Este é uma aplicação de quiz com perguntas e respostas, sistema de pontuação e funcionalidade para habilitar e desativar o quiz.
 
 ## Funcionalidades
 - Perguntas e respostas dinâmicas
@@ -36,8 +33,6 @@ Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](https:/
 5. Abra um Pull Request
 
 ## Imagens
-### Quiz Habilitado
-!Quiz Habilitado
-
-### Quiz Desabilitado
-!Quiz Desabilitado
+| Habilitado | Desabilitado |
+|:-----------------------------------:|:--------------------------------------:|
+| ![Active](https://imgur.com/uDrWVMj.png) | ![Desactive](https://imgur.com/JmSdHXB.png) |
