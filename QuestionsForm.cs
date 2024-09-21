@@ -100,13 +100,14 @@ namespace Quiz
 
                 // Limpa as variáveis.
                 Points = 0;
+                Time = 0;
                 IndexAnswerQuestions.Clear();
 
                 // Mensagem de Aviso
                 HandleDebug("Você finalizou o jogo.");
 
                 // Atualiza a pontuação após as variáveis serem limpas.
-                RefreshScore();
+                RefreshCounters();
             }
         }
 
@@ -166,7 +167,7 @@ namespace Quiz
 
             responseTextBox.Clear();
 
-            RefreshScore();
+            RefreshCounters();
             RefreshQuestion();
         }
 
@@ -181,7 +182,7 @@ namespace Quiz
             statusLabel.Text = (active ? "Iniciado" : "Desativado");
             statusLabel.ForeColor = (active ? Color.Green : Color.Red);
 
-            RefreshScore();
+            RefreshCounters();
         }
 
         private void RefreshQuestion()
@@ -208,12 +209,14 @@ namespace Quiz
             questionLabel.Text = Questions[index].Text;
         }
 
-        private void RefreshScore()
+        private void RefreshCounters()
         {
             if (Questions == null) return;
 
             answersLabel.Text = IndexAnswerQuestions.Count + "/" + Questions.Count;
+
             scoreLabel.Text = Points.ToString();
+            timeLabel.Text = Time.ToString();
         }
     }
 }
